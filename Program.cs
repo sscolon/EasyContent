@@ -76,6 +76,7 @@ void AppendFBX(string filePath)
      */
     string relativePath = Path.GetRelativePath(executingDirectory, filePath);
     contentBuilder.AppendLine($"#begin {relativePath}");
+    contentBuilder.AppendLine("/importer:FbxImporter");
     contentBuilder.AppendLine("/processor:ModelProcessor");
     contentBuilder.AppendLine("/processorParam:ColorKeyColor=0, 0, 0, 0");
     contentBuilder.AppendLine("/processorParam:ColorKeyEnabled=True");
