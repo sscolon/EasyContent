@@ -147,6 +147,7 @@ void ParseDirectory(string directory)
         {
             case ".pal":
             case ".png":
+            case ".json":
             case ".hjson":
             case ".dat":
             case ".lvl":
